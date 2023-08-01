@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ann Smith - Fashion Designer</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Nyatwa</h1>
+    <p>Fashion Designer</p>
+  </header>
+
+  <nav id="mainNav">
+    <a href="#" class="logo"><img src="./images/logo.png" alt="Logo"></a>
+    <div id="links" class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contacts">Contacts</a>
+      <a href="#portfolio">Portfolio Gallery</a>
+    </div>
+    <a href="#" onclick="toggleMenu()" id="menu" class="fas fa-bars"></a>
+  </nav>
+
+  <section class="hero-image">
+    <div class="social-links">
+      <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"><i class="fab fa-whatsapp"></i></a></li>
+    </div>
+    <div id="floating-links" style="color: white;">
+      <p>.</p>
+    </div>
+    <div class="motto"> 
+      <h1><span style="color: #808000;">Dressing</span> the World, One Stitch at a Time</h1>
+      <p>Where Fashion Becomes a Global Tapestry</p>
+      <a href="#contacts" class="contact" style="font-size: smaller x;">For more</a>
+    </div>
+  </section>
+
+
+  <section id="home">
+    <h2>Welcome to Nyatwa's Portfolio</h2>
+    <p>Welcome to my fashion world! Here, you'll find a showcase of my latest designs and creations.</p>
+  </section>
+
+  <section class="about-section" id="about">
+    <article class="image"></article>
+    <article class="about">
+      <h2>About Nyatwa</h2>
+      <p>I am a passionate fashion designer with years of experience in the industry. My designs are inspired by art, nature, and the vibrant colors of life. I believe that fashion is a way to express oneself and make a statement.</p>
+      <p>I completed my fashion design studies at the prestigious Malawi Polytechnic in Blantyre, Malawi, and have been creating stunning fashion pieces ever since.</p>
+      <a href="#contacts" class="contact">For more</a></article>
+
+  </section>
+
+  <section class="services-section" id="services">
+    <h2>My Fashion Design Services</h2>
+    <p id="passionate">As a passionate fashion designer, I offer a range of services to cater to your unique fashion needs. From concept to creation, I ensure that each design reflects your individual style and personality. Here are some of the services I provide:</p>
+  
+    <div class="services-container">
+      <div class="service">
+        <i class="fas fa-star"></i>
+        <h3>Custom Couture</h3>
+        <p>I specialize in crafting exquisite custom couture pieces for special occasions. Whether it's a wedding gown, evening dress, or formal attire, I will design a unique and stunning outfit that will make you stand out.</p>
+      </div>
+  
+      <div class="service">
+        <i class="fas fa-tshirt"></i>
+        <h3>Ready-to-Wear Collections</h3>
+        <p>For those looking for trendy and fashionable ready-to-wear pieces, my collections offer a wide range of styles that are perfect for everyday wear or special events. Each piece is carefully designed with attention to detail and quality.</p>
+      </div>
+  
+      <div class="service">
+        <i class="fas fa-user-tie"></i>
+        <h3>Personal Styling</h3>
+        <p>As a fashion expert, I provide personalized styling services to help you discover your unique style and build a wardrobe that complements your personality and lifestyle. From clothing to accessories, I'll guide you in creating the perfect look for any occasion.</p>
+      </div>
+  
+      <div class="service">
+        <i class="fas fa-comments"></i>
+        <h3>Fashion Consultation</h3>
+        <p>Need advice on the latest fashion trends or guidance on dressing for a specific event? My fashion consultation service offers expert advice and recommendations tailored to your preferences and body type.</p>
+      </div>
+  
+      <div class="service">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Clothing Alterations</h3>
+        <p>If you have a beloved outfit that needs alterations or repairs, I provide skilled tailoring services to ensure that your clothes fit perfectly and look their best.</p>
+      </div>
+  
+      <div class="service">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Fashion Workshops</h3>
+        <p>Passionate about fashion? I conduct interactive fashion workshops where you can learn about various aspects of fashion design, styling, and garment construction.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="contact-section" id="contacts">
+    <h2 id="h2">Contact Me</h2>
+    <p id="p">Any question or remarks? just write a messsage!</p>
+    <div class="contact-container">
+      <article class = "info">
+        <div>
+          <h2>Contact Information</h2>
+          <p>Fill up the form and i will get back to you within 24 hours</p>
+          <p>Email: nyatwa@example.com</p>
+          <p>Phone: +265123456789</p>
+          <img src="./images/id.png" alt="" class="contact-id">
+     </div>
+      </article>
+      <article class="form">
+          <div class="contact-fo">  
+            <form action="submit_form.php" method="post" id="form">
+              <h2 id="request">Request Callback</h2>
+              <p class="content" id="please">Please Complete The Form</p>
+              <input type="text" name="name" placeholder="Your Name *" required>
+              <br>
+              <input type="email" name="email" placeholder="Your Email *" required>
+              <br>
+              <input type="tel" name="contact" placeholder="Contact No">
+              <br>
+              <select name="purpose" required>
+                <option value="" disabled selected>Select a purpose</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Service Request">Service Request</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+              </select>
+              <br>
+              <textarea name="message" rows="4" placeholder="Comment or Message *" required></textarea>
+              <br>
+              <button type="submit">Request Callback</button>
+            </form>
+          </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="portfolio-gallery" id="portfolio">
+    <h2>Portfolio Gallery</h2>
+    <div class="gallery-container">
+      <img src="./images/1.jpeg" alt="Fashion Design 1">
+      <img src="./images/2.jpg" alt="Fashion Design 2">
+      <img src="./images/3.jpg" alt="Fashion Design 3">
+      <img src="./images/4.jpg" alt="Fashion Design 4">
+      <img src="./images/5.jpg" alt="Fashion Design 5">
+      <img src="./images/6.jpg" alt="Fashion Design 6">
+      <img src="./images/7.jpg" alt="Fashion Design 7">
+      <img src="./images/9.jpg" alt="Fashion Design 8">
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact me for inquiries and collaborations: <a href="mailto:nyatwa@example.com" class="mail">nyatwa@example.com</a></p>
+    <p>Follow me on social media:</p>
+    <div class="social-links-footer">
+      <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"><i class="fab fa-whatsapp"></i></a></li>
+    </div>
+    <p>Location: Blantyre, Malawi</p>
+  
+    <!-- Copyright notice -->
+    <div class="copyright">
+      <p>&copy; 2023 nyatwa. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="./script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
